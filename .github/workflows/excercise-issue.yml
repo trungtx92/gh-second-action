@@ -1,7 +1,7 @@
 name: Exercise Issue Workflow
 on: issues
 jobs:
-  exercise-issues:
+  exercise:
     runs-on: ubuntu-latest
     steps:
       - name: Generate issue

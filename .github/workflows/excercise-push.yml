@@ -1,4 +1,4 @@
-name: Exercise Workflow
+name: Exercise Push Workflow
 on: push
 jobs:
   exercise:
