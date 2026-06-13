@@ -1,0 +1,8 @@
+name: Exercise Issue Workflow
+on: issues
+jobs:
+  exercise-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate issue
+        run: echo "${{ github.event.issue.title }}"
