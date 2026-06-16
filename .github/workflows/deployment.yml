@@ -6,6 +6,15 @@ on:
       - synchronize
       - reopened
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - feature/*
+      - release/**
+    paths:
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
 jobs:
   test:
     runs-on: ubuntu-latest
